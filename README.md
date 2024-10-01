@@ -74,6 +74,25 @@ The data ingestion pipeline in Azure Data Factory includes the following dataset
 
    ![Azure Databricks]( https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/tokyo_synapse_analytics.png)
 
+   Linked Services and Resource Groups:-
+   
+   ![Azure Databricks]( https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/linked_services.png)
+
+   
+   ![Azure Databricks]( https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/resource_groups.png)
+   
+  Storage Accounts:-
+ 
+   ![Azure Databricks]( https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/storage_account.png)
+
+   ![Azure Databricks]( https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/storage_container_final.png)
+
+
+
+
+
+   
+
    
 
 
