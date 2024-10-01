@@ -68,15 +68,15 @@ The data ingestion pipeline in Azure Data Factory includes the following dataset
 
    Transformed Data Storage (Azure Data Lake Gen2)
 
-    ![Azure Databricks]( https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/azure_databricks_transformation_setup.png)
+   ![Azure Databricks]( https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/transformed_data_post_transformation.png)
 
-   images/transformed_data_post_transformation.png
+   Analytics (Azure Synapse Analytics)
 
-    Analytics (Azure Synapse Analytics)
+   ![Azure Databricks]( https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/tokyo_synapse_analytics.png)
 
-      ![Azure Databricks]( https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/azure_databricks_transformation_setup.png)
+   
 
-    
+
 
    
 
