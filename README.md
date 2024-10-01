@@ -37,7 +37,7 @@ Data flows through the following stages:
 ## Data Source
 This project utilizes the following dataset from Kaggle:
 
-- **Dataset**: [2021 Olympics in Tokyo](https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olympics-in-tokyo)
+- **Dataset**: [2021 Olympics in Tokyo](https://www.kaggle.com/datasets/arjunprasadsarkhel/images/2021-olympics-in-tokyo)
 
 The dataset includes multiple CSV files covering various aspects of the Olympic Games:
 - Athletes information
@@ -48,7 +48,7 @@ The dataset includes multiple CSV files covering various aspects of the Olympic 
 
 This rich dataset allows for in-depth analysis of the Tokyo Olympics, including performance metrics, country-wise comparisons, and gender distribution across events.
 
-## Data Pipeline
+## Data Ingestion Pipeline (Kaggle to Azure Data Factory)
 The data ingestion pipeline in Azure Data Factory includes the following datasets:
 - Athletes
 - Coaches
@@ -56,7 +56,42 @@ The data ingestion pipeline in Azure Data Factory includes the following dataset
 - Medals
 - Teams
 
-![Data Factory Pipeline](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/data_ingestion_pipeline.png)
+![Data Factory Pipeline](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/data_ingestion_pipeline.png)
+
+ Raw Data Storage (Azure Data Lake Gen2)
+
+ ![Data Factory Pipeline]( https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/raw_data_post_ingestion.png)
+
+ Data Transformation (Azure Databricks)
+
+  ![Azure Databricks]( https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/azure_databricks_transformation_setup.png)
+
+   Transformed Data Storage (Azure Data Lake Gen2)
+
+    ![Azure Databricks]( https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/azure_databricks_transformation_setup.png)
+
+   images/transformed_data_post_transformation.png
+
+    Analytics (Azure Synapse Analytics)
+
+      ![Azure Databricks]( https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/azure_databricks_transformation_setup.png)
+
+    
+
+   
+
+
+   
+
+  
+
+ 
+
+
+
+
+
+ 
 
 ## Setup and Configuration
 [Provide step-by-step instructions on how to set up and configure the project]
