@@ -18,12 +18,14 @@ The project leverages the following Azure services:
 
 Data flows through the following stages:
 1. **Data Source**: The source of the data is the 2021 Olympics dataset hosted on Kaggle.
-2. **Data Ingestion (Azure Data Factory)**: Data is ingested from Kaggle to Azure Data Factory, where it is prepared for further processing.
-3. **Raw Data Storage (Azure Data Lake Gen2)**: The ingested raw data is stored in Azure Data Lake Gen2 for easy access and management.
-4. **Data Transformation (Azure Databricks)**: Data is transformed using Azure Databricks, where various operations are applied to clean and structure the data.
-5. **Transformed Data Storage (Azure Data Lake Gen2)**: The transformed data is then stored back in Azure Data Lake Gen2 for further analysis.
-6. **Analytics (Azure Synapse Analytics)**: The data is analyzed using Azure Synapse Analytics to generate insights.
-7. **Visualization (Power BI and Tableau)**: The final insights are visualized using Power BI and Tableau for better representation and decision-making.
+2. Storage Accounts Setups:
+3. Resource Groups and Linked Services: 
+4. **Data Ingestion (Azure Data Factory)**: Data is ingested from Kaggle to Azure Data Factory, where it is prepared for further processing.
+5. **Raw Data Storage (Azure Data Lake Gen2)**: The ingested raw data is stored in Azure Data Lake Gen2 for easy access and management.
+6. **Data Transformation (Azure Databricks)**: Data is transformed using Azure Databricks, where various operations are applied to clean and structure the data.
+7. **Transformed Data Storage (Azure Data Lake Gen2)**: The transformed data is then stored back in Azure Data Lake Gen2 for further analysis.
+8. **Analytics (Azure Synapse Analytics)**: The data is analyzed using Azure Synapse Analytics to generate insights.
+9. **Visualization (Power BI and Tableau)**: The final insights are visualized using Power BI and Tableau for better representation and decision-making.
 
 ## Technologies Used
 - Microsoft Azure
@@ -62,6 +64,12 @@ The first step in the pipeline is setting up Azure Storage Accounts, which provi
 ![Storage Account](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/storage_account.png)
 ![Storage Container](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/storage_container_final.png)
 
+### Linked Services and Resource Groups
+linked services and resource groups are configured in Azure to manage the connections between different services used in the project. Make sure to setup the linked services and resource groups wherver required during the pipeline execution steps:-
+
+![Linked Services](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/linked_services.png)
+![Resource Groups](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/resource_groups.png)
+
 ### Data Ingestion
 Once the storage account is set up, data is ingested from Kaggle to Azure Data Factory. The ingestion process allows for the automated transfer of CSV files to Azure.
 
@@ -86,12 +94,6 @@ The transformed data is stored back in Azure Data Lake Gen2, making it ready for
 The stored data is analyzed using Azure Synapse Analytics, which provides powerful analytics capabilities to derive insights from the data.
 
 ![Tokyo Synapse Analytics](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/tokyo_synapse_analytics.png)
-
-### Linked Services and Resource Groups
-Finally, linked services and resource groups are configured in Azure to manage the connections between different services used in the project.
-
-![Linked Services](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/linked_services.png)
-![Resource Groups](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/resource_groups.png)
 
 
 ## Insights and Analytics
