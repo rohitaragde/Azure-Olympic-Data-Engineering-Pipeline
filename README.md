@@ -58,74 +58,33 @@ The data ingestion pipeline in Azure Data Factory includes the following dataset
 
 ![Data Factory Pipeline](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/data_ingestion_pipeline.png)
 
- Raw Data Storage (Azure Data Lake Gen2)
+### Raw Data Storage (Azure Data Lake Gen2)
+![Raw Data Post Ingestion](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/raw_data_post_ingestion.png)
 
- ![Data Factory Pipeline]( https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/raw_data_post_ingestion.png)
+### Data Transformation (Azure Databricks)
+![Azure Databricks Transformation Setup](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/azure_databricks_transformation_setup.png)
 
- Data Transformation (Azure Databricks)
+### Transformed Data Storage (Azure Data Lake Gen2)
+![Transformed Data Post Transformation](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/transformed_data_post_transformation.png)
 
-  ![Azure Databricks]( https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/azure_databricks_transformation_setup.png)
+### Analytics (Azure Synapse Analytics)
+![Tokyo Synapse Analytics](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/tokyo_synapse_analytics.png)
 
-   Transformed Data Storage (Azure Data Lake Gen2)
+### Linked Services and Resource Groups
+![Linked Services](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/linked_services.png)
+![Resource Groups](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/resource_groups.png)
 
-   ![Azure Databricks]( https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/transformed_data_post_transformation.png)
-
-   Analytics (Azure Synapse Analytics)
-
-   ![Azure Databricks]( https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/tokyo_synapse_analytics.png)
-
-   Linked Services and Resource Groups:-
-   
-   ![Azure Databricks]( https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/linked_services.png)
-
-   
-   ![Azure Databricks]( https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/resource_groups.png)
-   
-  Storage Accounts:-
- 
-   ![Azure Databricks]( https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/storage_account.png)
-
-   ![Azure Databricks]( https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/storage_container_final.png)
-
-
-
-
-
-   
-
-   
-
-
-
-   
-
-
-   
-
-  
-
- 
-
-
-
-
-
- 
+### Storage Accounts
+![Storage Account](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/storage_account.png)
+![Storage Container](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/storage_container_final.png)
 
 ## Setup and Configuration
-[Provide step-by-step instructions on how to set up and configure the project]
+1. **Prerequisites**:
+   - Microsoft Azure account
+   - Required Azure services set up (Data Factory, Data Lake, Databricks, etc.)
+   - [Optional] Local development environment with Python and necessary libraries
 
-## Usage
-[Explain how to use the pipeline or access the transformed data]
-
-## Insights and Analytics
-[Describe key insights or analytics capabilities provided by the project]
-
-## Future Enhancements
-[List any planned improvements or potential extensions of the project]
-
-## Contributing
-We welcome contributions to this project. Please feel free to submit issues and pull requests.
-
-## License
-[Include your chosen license information]
+2. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/rohitaragde/azure-de-olampics-data.git
+   cd azure-de-olampics-data
