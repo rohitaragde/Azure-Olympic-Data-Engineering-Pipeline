@@ -1,21 +1,10 @@
 # Azure Olympic Data Engineering Project
 
-## Project Overview
+## Introduction
 This project implements a comprehensive data engineering pipeline for Olympic data using Microsoft Azure services. It demonstrates the end-to-end process of data ingestion, storage, transformation, analysis, and visualization of Olympic-related datasets.
 
-## Data Source
+## Project Overview
 This project utilizes data from the 2021 Olympics in Tokyo, sourced from Kaggle. The dataset provides comprehensive information about the Tokyo Olympics, including details on athletes, coaches, events, and medal outcomes.
-
-Dataset: [2021 Olympics in Tokyo](https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olympics-in-tokyo)
-
-The dataset includes multiple CSV files covering various aspects of the Olympic Games:
-- Athletes information
-- Coaches details
-- Gender-wise entries
-- Medal statistics
-- Team compositions
-
-This rich dataset allows for in-depth analysis of the Tokyo Olympics, including performance metrics, country-wise comparisons, and gender distribution across events.
 
 ## Architecture
 ![Project Architecture](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/architecture.png)
@@ -35,6 +24,29 @@ Data flows through the following stages:
 5. Transformed Data Storage (Azure Data Lake Gen2)
 6. Analytics (Azure Synapse Analytics)
 7. Visualization (Power BI and Tableau)
+
+## Technologies Used
+- Microsoft Azure
+- Python
+- SQL
+- Power BI
+- Azure Data Factory
+- Azure Databricks
+- Azure Synapse Analytics
+
+## Data Source
+This project utilizes the following dataset from Kaggle:
+
+- **Dataset**: [2021 Olympics in Tokyo](https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olympics-in-tokyo)
+
+The dataset includes multiple CSV files covering various aspects of the Olympic Games:
+- Athletes information
+- Coaches details
+- Gender-wise entries
+- Medal statistics
+- Team compositions
+
+This rich dataset allows for in-depth analysis of the Tokyo Olympics, including performance metrics, country-wise comparisons, and gender distribution across events.
 
 ## Data Pipeline
 The data ingestion pipeline in Azure Data Factory includes the following datasets:
