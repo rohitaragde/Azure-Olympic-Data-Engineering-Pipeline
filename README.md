@@ -75,7 +75,7 @@ Linked services and resource groups are configured in Azure to manage the connec
 ![Linked Services](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/linked_services.png)
 
 
-### Resource Groups
+## Resource Groups
 
 In this project, resource groups are utilized to efficiently organize and manage all the Azure services associated with the Olympic Data Engineering Pipeline. By grouping resources together, we can simplify management tasks, streamline deployment processes, and enforce access permissions based on the project requirements.
 
@@ -84,27 +84,27 @@ The following image illustrates the setup of the resource groups used in this pr
 ![Resource Groups](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/resource_groups.png)
 
 
-### Data Ingestion
+## Data Ingestion
 Once the storage account is set up, data is ingested from Kaggle to Azure Data Factory. The ingestion process allows for the automated transfer of CSV files to Azure.
 
 ![Data Factory Pipeline](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/data_ingestion_pipeline.png)
 
-### Raw Data Storage (Azure Data Lake Gen2)
+## Raw Data Storage (Azure Data Lake Gen2)
 After ingestion, the raw data is stored in Azure Data Lake Gen2, which serves as a central repository for unstructured and structured data.
 
 ![Raw Data Post Ingestion](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/raw_data_post_ingestion.png)
 
-### Data Transformation (Azure Databricks)
+## Data Transformation (Azure Databricks)
 The raw data is then processed and transformed using Azure Databricks, where data cleaning, normalization, and other transformation tasks are performed.
 
 ![Azure Databricks Transformation Setup](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/azure_databricks_transformation_setup.png)
 
-### Transformed Data Storage (Azure Data Lake Gen2)
+## Transformed Data Storage (Azure Data Lake Gen2)
 The transformed data is stored back in Azure Data Lake Gen2, making it ready for analytics and further processing.
 
 ![Transformed Data Post Transformation](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/transformed_data_post_transformation.png)
 
-### Analytics (Azure Synapse Analytics)
+## Analytics (Azure Synapse Analytics)
 The stored data is analyzed using Azure Synapse Analytics, which provides powerful analytics capabilities to derive insights from the data.
 
 ![Tokyo Synapse Analytics](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/tokyo_synapse_analytics.png)
@@ -140,7 +140,10 @@ The stored data is analyzed using Azure Synapse Analytics, which provides powerf
 - Execute the pipeline and all the other relevant Azure services, and finally perform the analysis
 
 ## Contributors
-Rohit Annasaheb Ragde
+**Rohit Annasaheb Ragde**
 
 ## Credits
 Darshil Parmar
+
+## References
+https://www.youtube.com/watch?v=IaA9YNlg5hM&t=41s
