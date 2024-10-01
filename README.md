@@ -56,6 +56,10 @@ The data ingestion pipeline in Azure Data Factory includes the following dataset
 - Medals
 - Teams
 
+### Storage Accounts
+![Storage Account](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/storage_account.png)
+![Storage Container](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/storage_container_final.png)
+
 ![Data Factory Pipeline](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/data_ingestion_pipeline.png)
 
 ### Raw Data Storage (Azure Data Lake Gen2)
@@ -74,17 +78,5 @@ The data ingestion pipeline in Azure Data Factory includes the following dataset
 ![Linked Services](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/linked_services.png)
 ![Resource Groups](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/resource_groups.png)
 
-### Storage Accounts
-![Storage Account](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/storage_account.png)
-![Storage Container](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/storage_container_final.png)
 
-## Setup and Configuration
-1. **Prerequisites**:
-   - Microsoft Azure account
-   - Required Azure services set up (Data Factory, Data Lake, Databricks, etc.)
-   - [Optional] Local development environment with Python and necessary libraries
 
-2. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/rohitaragde/azure-de-olampics-data.git
-   cd azure-de-olampics-data
