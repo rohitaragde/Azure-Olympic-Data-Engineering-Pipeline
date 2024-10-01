@@ -6,7 +6,7 @@ This project implements a comprehensive data engineering pipeline for Olympic da
 
 ## Architecture
 
-![Project Architecture](path_to_architecture_image.png)
+![Project Architecture](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/architecture.png)
 
 The project leverages the following Azure services:
 
