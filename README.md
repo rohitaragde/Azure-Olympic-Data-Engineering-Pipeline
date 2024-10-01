@@ -56,7 +56,7 @@ The data ingestion pipeline in Azure Data Factory includes the following dataset
 - Medals
 - Teams
 
-![Data Factory Pipeline](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/data_load_pipeline.png)
+![Data Factory Pipeline](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/data_ingestion_pipeline.png)
 
 ## Setup and Configuration
 [Provide step-by-step instructions on how to set up and configure the project]
