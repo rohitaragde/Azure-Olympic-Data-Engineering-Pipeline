@@ -14,7 +14,6 @@ The project leverages the following Azure services:
 - Azure Data Lake Storage Gen2
 - Azure Databricks
 - Azure Synapse Analytics
-- Power BI
 
 Data flows through the following stages:
 1. **Data Source**: The source of the data is the 2021 Olympics dataset hosted on Kaggle.
@@ -25,13 +24,11 @@ Data flows through the following stages:
 6. **Data Transformation (Azure Databricks)**: Data is transformed using Azure Databricks, where various operations are applied to clean and structure the data.
 7. **Transformed Data Storage (Azure Data Lake Gen2)**: The transformed data is then stored back in Azure Data Lake Gen2 for further analysis.
 8. **Analytics (Azure Synapse Analytics)**: The data is analyzed using Azure Synapse Analytics to generate insights.
-9. **Visualization (Power BI and Tableau)**: The final insights are visualized using Power BI and Tableau for better representation and decision-making.
 
 ## Technologies Used
 - Microsoft Azure
 - Python
 - SQL
-- Power BI
 - Azure Data Factory
 - Azure Databricks
 - Azure Synapse Analytics
@@ -62,7 +59,15 @@ The data ingestion pipeline in Azure Data Factory includes the following dataset
 The first step in the pipeline is setting up Azure Storage Accounts, which provide a secure and scalable environment for storing large amounts of data.
 
 ![Storage Account](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/storage_account.png)
+
+### Containers 
+
+Storage containers are utilized to separate the different datasets related to the 2021 Tokyo Olympics, ensuring that the data remains organized and easily accessible. By structuring the data into containers, we can efficiently manage the ingestion, processing, and storage of the raw and transformed datasets.
+
+The following image illustrates the setup of the storage containers used in this project:
+
 ![Storage Container](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/storage_container_final.png)
+
 
 ### Linked Services and Resource Groups
 Linked services and resource groups are configured in Azure to manage the connections between different services used in the project. Ensure to set up the linked services and resource groups wherever required during the pipeline execution steps:
