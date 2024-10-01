@@ -18,8 +18,8 @@ The project leverages the following Azure services:
 
 Data flows through the following stages:
 1. **Data Source**: The source of the data is the 2021 Olympics dataset hosted on Kaggle.
-2. Storage Accounts Setups:
-3. Resource Groups and Linked Services: 
+2. **Storage Accounts Setup**: Azure Storage Accounts are configured to provide a secure and scalable environment for storing large amounts of data.
+3. **Resource Groups and Linked Services**: Linked services and resource groups are configured in Azure to manage the connections between different services used in the project.
 4. **Data Ingestion (Azure Data Factory)**: Data is ingested from Kaggle to Azure Data Factory, where it is prepared for further processing.
 5. **Raw Data Storage (Azure Data Lake Gen2)**: The ingested raw data is stored in Azure Data Lake Gen2 for easy access and management.
 6. **Data Transformation (Azure Databricks)**: Data is transformed using Azure Databricks, where various operations are applied to clean and structure the data.
@@ -65,7 +65,7 @@ The first step in the pipeline is setting up Azure Storage Accounts, which provi
 ![Storage Container](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/storage_container_final.png)
 
 ### Linked Services and Resource Groups
-linked services and resource groups are configured in Azure to manage the connections between different services used in the project. Make sure to setup the linked services and resource groups wherver required during the pipeline execution steps:-
+Linked services and resource groups are configured in Azure to manage the connections between different services used in the project. Ensure to set up the linked services and resource groups wherever required during the pipeline execution steps:
 
 ![Linked Services](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/linked_services.png)
 ![Resource Groups](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/resource_groups.png)
@@ -95,8 +95,6 @@ The stored data is analyzed using Azure Synapse Analytics, which provides powerf
 
 ![Tokyo Synapse Analytics](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/tokyo_synapse_analytics.png)
 
-
-## Insights and Analytics
 ## Insights and Analytics
 
 1. **Number of Athletes from Each Country**:
@@ -121,15 +119,14 @@ The stored data is analyzed using Azure Synapse Analytics, which provides powerf
 - Further exploration could involve examining the relationship between the number of athletes and medal success to uncover patterns in Olympic performance.
 - Investigating the impact of funding, training programs, and government support on athlete performance and participation could yield additional valuable insights.
 
-## Steps to execute the project
+## Steps to Execute the Project
 - Clone the repository
-- Make sure to have azure account with all the required access
-- Setup the storage account and all the relevant linked services and resource groups
-- execute the pipeline and all the other relevant Azure services and finally perform the analysis
-
+- Make sure to have an Azure account with all the required access
+- Set up the storage account and all the relevant linked services and resource groups
+- Execute the pipeline and all the other relevant Azure services, and finally perform the analysis
 
 ## Contributors
 Rohit Annasaheb Ragde
 
-## Credits:-
+## Credits
 Darshil Parmar
