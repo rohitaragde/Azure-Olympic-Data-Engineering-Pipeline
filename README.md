@@ -55,12 +55,12 @@ The data ingestion pipeline in Azure Data Factory includes the following dataset
 - Medals
 - Teams
 
-### Storage Accounts
+## Storage Accounts
 The first step in the pipeline is setting up Azure Storage Accounts, which provide a secure and scalable environment for storing large amounts of data.
 
 ![Storage Account](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/storage_account.png)
 
-### Containers 
+## Containers 
 
 Storage containers are utilized to separate the different datasets related to the 2021 Tokyo Olympics, ensuring that the data remains organized and easily accessible. By structuring the data into containers, we can efficiently manage the ingestion, processing, and storage of the raw and transformed datasets.
 
@@ -69,11 +69,20 @@ The following image illustrates the setup of the storage containers used in this
 ![Storage Container](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/storage_container_final.png)
 
 
-### Linked Services and Resource Groups
+## Linked Services and Resource Groups
 Linked services and resource groups are configured in Azure to manage the connections between different services used in the project. Ensure to set up the linked services and resource groups wherever required during the pipeline execution steps:
 
 ![Linked Services](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/linked_services.png)
+
+
+### Resource Groups
+
+In this project, resource groups are utilized to efficiently organize and manage all the Azure services associated with the Olympic Data Engineering Pipeline. By grouping resources together, we can simplify management tasks, streamline deployment processes, and enforce access permissions based on the project requirements.
+
+The following image illustrates the setup of the resource groups used in this project:
+
 ![Resource Groups](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/resource_groups.png)
+
 
 ### Data Ingestion
 Once the storage account is set up, data is ingested from Kaggle to Azure Data Factory. The ingestion process allows for the automated transfer of CSV files to Azure.
